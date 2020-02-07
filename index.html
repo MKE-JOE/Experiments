@@ -1,1 +1,10 @@
-<embed width="300" height="30" src="https://github.com/MKE-JOE/Experiments/blob/master/internet-radio.com.playlist.m3u" type="application/x-mplayer2" autoplay="true"></embed>
+<script type="text/javascript" src="jquery-1.7.1.js"></script>
+<script type="text/javascript">
+$(document).ready( function() {
+$('#track1').click(function(){
+   $('#wrap').append('<embed id="embed_player" src="audio.wav" autostart="true" hidden="true"></embed>');
+});
+});
+</script>
+<img name="track1" src="images/track1.png" width="180" height="180" border="0" id="track1" alt="" />
+<div id="wrap">&nbsp;</div>
